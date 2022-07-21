@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS472-WAP - Customer Contact Form</title>
+
+  
+   
+</head>
+<body>
+<header>
+    <!-- TODO Adding navbar here -->
+    <div class="navbar">
+        <label ><a href="https://www.google.com/">The South West-Regional Census</a></label>
+        <label ><a href="https://www.google.com/">Other Forms</a></label>
+        <label ><a href="https://www.google.com/">Contact Us</a></label>
+         <label ><a href="https://www.google.com/"> <img src="./homepage.jpeg" width="25px" /> Home</a></label>
+       
+
+    
+    </div>
+</header>
+    <main>
+        <div class="container">
+            <!-- TODO Add content here -->
+            <h1 >Customer Contact Form</h1>
+            <hr>
+            <!-- Implement Web form here-->
+            <form id="consusForm" method="POST" action="contact-form-handler">
+                <fieldset>
+                    
+                    <div class="form-group">
+                        <label for="personalName">*Full Name:</label>
+                        <input  class="form-control" type="text" name="name" id="personalName" placeholder="Enter your name" autofocus>
+                        <small class="form-text text-muted">Enter your full name</small>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label >*Gender:</label>
+                            <div class="custom-control custom-radio">
+                                <input required="" type="radio" name="genderCitizen" id="genderCitizenYes" class="custom-control-input" value="Male">
+                                <label for="genderCitizenYes" class="custom-control-label">Male</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" name="genderCitizen" id="genderCitizenNo" class="custom-control-input" value="Female">
+                                <label for="genderCitizenNo" class="custom-control-label">Female</label>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="col-form">*Citizen ID</label>
+                                <input type="number" class="form-control" id="citizenId" placeholder="XXXXXXXXXX" pattern="\d{10}" title="enter 10 digits" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="col-form">*social Security Number</label>
+                                <input type="text" class="form-control " id="ssn" placeholder="XXX-XX-XXXX" pattern="[0-9]{3}-[0-9]{2}-[0-9]{4}" title="correct format is xxx-xx-xxxx">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="state">*State:</label>
+                                <select class="form-control" id="state" name="state">
+                                    <option value="null">Select...</option>
+                                    <option value="Alaska">Alaska</option>
+                                    <option value="California">California</option>
+                                    <option value="Iowa">Iowa</option>
+                                    <option value="Texas">Texas</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label >*Senior Citizen:</label>
+                                <div class="custom-control custom-radio">
+                                    <input required="" type="radio" name="radioCitizen" id="radioCitizenYes" class="custom-control-input" value="Yes">
+                                    <label for="radioCitizenYes" class="custom-control-label">Yes</label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" name="radioCitizen" id="radioCitizenNo" class="custom-control-input" value="No">
+                                    <label for="radioCitizenNo" class="custom-control-label">No</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <button id="btnreset" type="reset" class="btn btn-primary ">Reset</button>
+                    <button id="btnSubmit" type="submit" class="btn btn-primary ">Submit</button>
+                </fieldset>
+            </form>
+           
+        </div>
+    </main>
+    <footer>
+        <!-- TODO Add footer content here -->
+        <div>
+           
+            <span id="footerTime">&copy;Abiel B. Oka July 2022</span>
+        </div>
+    </footer>
+
+    
+
+</body>
+</html>
